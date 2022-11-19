@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
     --dark-cyan: hsl(185, 75%, 39%);
     --very-dark-saturated-blue: hsl(229, 23%, 23%);
@@ -21,23 +29,55 @@ body {
 
 img {
     border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 #container {
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto;
-    margin-top: 40vh;
+    margin-top: 20vh;
 }
 
 .card {
     background-color: white;
     background-image: url(images/bg-pattern-card.svg);
     border-radius: 12px;
+    padding: 8px;
+    text-align: center;
 }
 
-.name {
+.name span {
     font-weight: 700;
     color: black;
+    margin-right: 5px;
+}
+
+.name p {
+    font-size: 0.875rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 0.031rem;
+    background-color: var(--dark-gray);
+}
+
+.stats {
+    margin: 20px 0;
+}
+
+.stats span {
+    font-weight: 700;
+    color: black;
+    margin-right: 5px;
+}
+
+.stats p {
+    font-size: 0.563rem;
+    letter-spacing: 3px;
 }
 
 @media (max-width: 450px) {
