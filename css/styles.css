@@ -18,7 +18,6 @@
 body {
     /* background still need to be fixed. */
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    
     background-repeat: no-repeat, no-repeat;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
@@ -27,10 +26,12 @@ body {
     color: var(--dark-gray);
 }
 
-img {
+.image-avatar {
     border-radius: 50%;
+    border: 6px solid white;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 90px;
+    position: relative;
 }
 
 #container {
@@ -43,13 +44,22 @@ img {
     background-color: white;
     background-image: url(images/bg-pattern-card.svg);
     border-radius: 12px;
-    padding: 8px;
     text-align: center;
+    box-shadow: 0px 2px 16px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card__background {
+    border-radius: 12px 12px 0 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: absolute;
 }
 
 .name span {
     font-weight: 700;
-    color: black;
+    color: rgb(60, 60, 60);
     margin-right: 5px;
 }
 
@@ -62,16 +72,24 @@ img {
 hr {
     border: none;
     height: 0.031rem;
-    background-color: var(--dark-gray);
+    background-color: hsl(0, 0%, 90%);
 }
 
 .stats {
     margin: 20px 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.stats > div {
+    margin: 0 10px 0;
+    padding: 10px;
 }
 
 .stats span {
     font-weight: 700;
-    color: black;
+    color: rgb(60, 60, 60);
     margin-right: 5px;
 }
 
@@ -80,13 +98,10 @@ hr {
     letter-spacing: 3px;
 }
 
-@media (max-width: 450px) {
-    
-}
-
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: black;
 }
 
 
