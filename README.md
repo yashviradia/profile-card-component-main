@@ -17,7 +17,7 @@
 
 ### Links
 
-- Solution URL: [Profile card component](https://www.frontendmentor.io/solutions/summary-card-component-BJl9NhxV9)
+- Solution URL: [Profile card component](https://www.frontendmentor.io/solutions/profile-card-component-html-css-vnL24z6o9L)
 - Live Site URL: https://yashviradia.github.io/profile-card-component-main/
 
 ### Built with
