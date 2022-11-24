@@ -15,15 +15,29 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
+html {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     /* background still need to be fixed. */
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
     background-repeat: no-repeat, no-repeat;
     background-color: var(--dark-cyan);
+    flex-grow: 1;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: var(--dark-gray);
+}
+
+@media screen and (min-width: 93.75em) {
+    body {
+      background-position: right 66vw bottom 53vh, left 71vw top 65vh;
+    }
 }
 
 .image-avatar {
